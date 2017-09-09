@@ -1,10 +1,12 @@
 package alexescg.com.github.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.management.OperatingSystemMXBean;
 
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
+import java.util.Map;
 
 /**
  * System information model
@@ -90,5 +92,11 @@ public class SystemInformation {
         int minutes = (seconds / 60);
         seconds -= (minutes * 60);
         return minutes + " m " + seconds + " s";
+    }
+
+    @SuppressWarnings("unchecked")
+    public Map<String, Object> toMap() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.convertValue(this, Map.class);
     }
 }
