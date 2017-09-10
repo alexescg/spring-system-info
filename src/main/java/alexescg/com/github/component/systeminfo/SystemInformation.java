@@ -1,4 +1,4 @@
-package alexescg.com.github.model;
+package alexescg.com.github.component.systeminfo;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.databind.ObjectMapper;
