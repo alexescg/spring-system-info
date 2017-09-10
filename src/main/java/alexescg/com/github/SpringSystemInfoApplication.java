@@ -4,11 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @author alex
  */
-@ComponentScan("alexescg.com.github.component")
+@ComponentScan("alexescg.com.github.component.systeminfo")
 @SpringBootApplication
 @EnableAutoConfiguration
 public class SpringSystemInfoApplication {
