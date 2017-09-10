@@ -1,12 +1,8 @@
 package alexescg.com.github.component.systeminfo;
 
-//import org.springframework.boot.actuate.info.Info;
-//import org.springframework.boot.actuate.info.InfoContributor;
 import org.springframework.boot.actuate.info.Info;
 import org.springframework.boot.actuate.info.InfoContributor;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-        import org.springframework.stereotype.Component;
-
+import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -15,7 +11,6 @@ import java.util.logging.Logger;
  * @author alex
  */
 @Component
-@EnableAutoConfiguration
 public class SystemInformationComponent implements InfoContributor {
 
     @Override
